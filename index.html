@@ -8,7 +8,7 @@
 <meta content="Tu dostaniesz wodę z kranu" property="og:title">
 <meta content="website" property="og:type">
 <meta content="http://gdzie.pijewodezkranu.org/kropla_wide.png" property="og:image">
-<meta content="Akcja „Tu dostaniesz wodę z kranu” ma na celu promocję knajp, w których zawsze można poprosić o darmową wodę z kranu. Jeśli znasz takie miejsce — daj nam znać!" property="og:description">
+<meta content="Akcja „Tu dostaniesz wodę z kranu” ma na celu promocję knajp, w których zawsze można poprosić o darmową wodę z kranu." property="og:description">
 <link href='https://fonts.googleapis.com/css?family=Lato:300,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 <style type="text/css">
 a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
@@ -28,7 +28,8 @@ content: ""; }
 body { color: #444; font: normal normal 300 100%/1.5em Lato, sans-serif; margin: 2em auto 3em; background: #fff; }
 header, section { margin: auto; text-align: center; }
 header, #list { width: 28em; }
-#map {margin: 2em auto;}
+#map {position: relative; margin: 2em auto;}
+#loading {margin: -400px auto 440px; }
 a { color: #2c6fb7 }, a:visited {color: #1a5387;}
 .place {margin: 1.5em 0; font-weight: 300}
 .name {font-size: 140%; margin: 0 0 .2em; }
@@ -48,6 +49,8 @@ h2 {font-size: 150%; font-weight: 600; margin: 3em 0 0;}
     text-rendering: optimizeLegibility;
 }
 
+
+
 </style>
 </head>
 <body>
@@ -55,13 +58,18 @@ h2 {font-size: 150%; font-weight: 600; margin: 3em 0 0;}
 <header>
 <hgroup>
 <h1><img src="tudostaniesz.png" alt="Tu dostaniesz wodę z kranu"></h1>
-<p>Akcja „Tu dostaniesz wodę z kranu” ma na celu promocję knajp, w&nbsp;których zawsze można poprosić o darmową wodę z kranu. Jeśli znasz takie miejsce — <a href="mailto:kontakt@pijewodezkranu.com">daj nam znać</a>!</p>
+<p>Akcja „Tu dostaniesz wodę z kranu” ma na celu promocję knajp, w&nbsp;których zawsze można poprosić o darmową wodę z kranu. Jeśli znasz takie miejsce — <a href="http://bit.ly/zglos-miejsce">zgłoś je do akcji</a>!</p>
 </hgroup>
 </header>
 
 <section id="map">
   <div>
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/pijewodezkranu.j4e8dmme/attribution,zoompan,geocoder,share.html?access_token=pk.eyJ1IjoicGlqZXdvZGV6a3JhbnUiLCJhIjoiOHlHZUtxQSJ9.bzfI7E6aGTFl-Rm_O5ZIrw'></iframe>
+      <div id="loading">
+      <p>Ładuję mapę…</p>
+
+      </div>
+
   </div>
 </section>
 
@@ -397,7 +405,7 @@ h2 {font-size: 150%; font-weight: 600; margin: 3em 0 0;}
 
 <div class="place">
 <div class="name">Cafe Bergson</div>
-<address>Pl. skarbka 5</address>
+<address>Pl. Skarbka 5</address>
 </div>
 
 
@@ -413,7 +421,7 @@ h2 {font-size: 150%; font-weight: 600; margin: 3em 0 0;}
 </div>
 
 
-<p class="colophon">Akcja organizowana jest przez inicjatywę społeczną <br><a href="http://www.pijewodezkranu.com">Piję wodę z kranu</a></p>
+<p class="colophon">Akcja organizowana jest przez inicjatywę społeczną <br><a href="http://www.pijewodezkranu.org">Piję wodę z kranu</a></p>
 
 </section>
 
